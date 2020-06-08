@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainActivity"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Capturar código" />
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_lock_outline_black_24dp"
+            android:title="Mis códigos privados" />
+        <item
+            android:id="@+id/nav_cPublicos"
+            android:icon="@drawable/ic_lock_open_black_24dp"
+            android:title="Mis códigos públicos" />
+        <item
+            android:id="@+id/nav_explorar"
+            android:icon="@drawable/ic_explore_black_24dp"
+            android:title="Explorar" />
+        <item
+            android:id="@+id/nav_favoritos"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Favoritos" />
+        <item
+            android:id="@+id/ajustes2"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Ajustes" />
+
+        <item
+            android:id="@+id/ayuda2"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="Ayuda" />
+        <item
+            android:id="@+id/cerrar_sesion"
+            android:icon="@drawable/ic_power_24dp"
+            android:title="Cerrar Sesión" />
+    </group>
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1079601506220",
+    "firebase_url": "https://vision-a2c79.firebaseio.com",
+    "project_id": "vision-a2c79",
+    "storage_bucket": "vision-a2c79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079601506220:android:a31d5dc8507002d2f73c09",
+        "android_client_info": {
+          "package_name": "com.example.pruebavision"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079601506220-n2tdc2btlq31gi179m67i5o2lchvqrft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pruebavision",
+            "certificate_hash": "95a2d5f69a14ea178a224bc33a9f762b21ab4de1"
+          }
+        },
+        {
+          "client_id": "1079601506220-8b4hi8mfnljp4t24esqb3t7oqjcicebn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzivLDub9XBHxALlV0A5GLrIMSr4Yo7TU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079601506220-8b4hi8mfnljp4t24esqb3t7oqjcicebn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

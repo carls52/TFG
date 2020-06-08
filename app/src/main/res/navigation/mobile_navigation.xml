@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pruebavision.ui.RepPrivado.HomeFragment"
+        android:label="Mis códigos privados"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_first2Fragment"
+            app:destination="@id/first2Fragment"
+
+            app:enterAnim="@anim/left_right"
+            app:exitAnim="@anim/left_right_exit"
+            app:popEnterAnim="@anim/right_left"
+            app:popExitAnim="@anim/right_left_exit" />
+        <action
+            android:id="@+id/action_nav_home_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:enterAnim="@anim/right_left"
+            app:exitAnim="@anim/right_left_exit"
+            app:popEnterAnim="@anim/right_left_exit"
+            app:popExitAnim="@anim/right_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_cPublicos"
+        android:name="com.example.pruebavision.ui.RepPublico.MisCPublicosFragment"
+        android:label="Mis códigos públicos"
+        tools:layout="@layout/fragment_repositorio_publico" >
+        <action
+            android:id="@+id/action_nav_gallery_to_codigoPublicoFragment"
+            app:destination="@id/codigoPublicoFragment"
+            app:enterAnim="@anim/bot_top"
+            app:exitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:popExitAnim="@anim/bot_top_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_explorar"
+        android:name="com.example.pruebavision.ui.Explorar.ExplorarFragment"
+        android:label="Explorar"
+        tools:layout="@layout/fragment_explorar" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_codigoPublicoFragment"
+            app:destination="@id/codigoPublicoFragment"
+            app:enterAnim="@anim/bot_top"
+            app:exitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:popExitAnim="@anim/bot_top_exit" />
+        <action
+            android:id="@+id/action_nav_explorar_to_filtros"
+            app:destination="@id/filtros" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_favoritos"
+        android:name="com.example.pruebavision.ui.Favoritos"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favoritos" >
+        <action
+            android:id="@+id/action_nav_favoritos_to_codigoPublicoFragment"
+            app:destination="@id/codigoPublicoFragment"
+            app:enterAnim="@anim/bot_top"
+            app:exitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:popExitAnim="@anim/bot_top_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/first2Fragment"
+        android:name="com.example.pruebavision.Repositorio"
+        android:label="{tipo}"
+        tools:layout="@layout/fragment_first2" >
+        <argument
+            android:name="tipo"
+            app:argType="string"
+            android:defaultValue='default' />
+        <action
+            android:id="@+id/action_first2Fragment_to_repositorioPrivado"
+            app:destination="@id/repositorioPrivado"
+            app:enterAnim="@anim/bot_top"
+            app:popExitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:exitAnim="@anim/bot_top_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/codigoPublicoFragment"
+        android:name="com.example.pruebavision.CodigoPublicoFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_codigo_publico" >
+        <argument
+            android:name="Id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/cerrar_sesion"
+        android:name="com.example.pruebavision.ui.CerrarSesion"
+        android:label="cerrar_sesion" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.pruebavision.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/repositorioPrivado"
+        android:name="com.example.pruebavision.CodigoPrivadoFragment"
+        tools:layout="@layout/fragment_repositorio_privado"/>
+    <fragment
+        android:id="@+id/ajustes2"
+        android:name="com.example.pruebavision.ui.Ajustes"
+        android:label="Ajustes"
+        tools:layout="@layout/fragment_ajustes" >
+        <action
+            android:id="@+id/action_ajustes2_to_cambios"
+            app:destination="@id/cambios"
+            app:enterAnim="@anim/bot_top"
+            app:exitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:popExitAnim="@anim/bot_top_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayuda2"
+        android:name="com.example.pruebavision.ui.Ayuda"
+        android:label="Ayuda"
+        tools:layout="@layout/fragment_ayuda" />
+    <fragment
+        android:id="@+id/cambios"
+        android:name="com.example.pruebavision.Cambios"
+        tools:layout="@layout/fragment_cambios">
+        <argument
+            android:name="tipo"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/filtros"
+        android:label=" "
+        android:name="com.example.pruebavision.Filtros"
+        tools:layout="@layout/fragment_filtros">
+        <action
+            android:id="@+id/action_filtros_to_nav_explorar"
+            app:destination="@id/nav_explorar" />
+        <action
+            android:id="@+id/action_filtros_to_busqueda"
+            app:destination="@id/busqueda" />
+    </fragment>
+    <fragment
+        android:id="@+id/busqueda"
+        android:name="com.example.pruebavision.Busqueda"
+        android:label="fragment_busqueda"
+        tools:layout="@layout/fragment_busqueda" >
+        <action
+            android:id="@+id/action_busqueda_to_nav_explorar"
+            app:destination="@id/nav_explorar" />
+        <action
+            android:id="@+id/action_busqueda_to_codigoPublicoFragment"
+            app:destination="@id/codigoPublicoFragment"
+            app:enterAnim="@anim/bot_top"
+            app:exitAnim="@anim/bot_top_exit"
+            app:popEnterAnim="@anim/top_bot"
+            app:popExitAnim="@anim/bot_top_exit" />
+    </fragment>
+</navigation>
