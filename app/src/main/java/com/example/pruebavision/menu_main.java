@@ -52,8 +52,9 @@ public class menu_main extends AppCompatActivity {
         TextView correo = view.findViewById(R.id.nav_header_subtitle);
 
 
-       /* Intent e = new Intent(menu_main.this, MainActivity.class);
-        startActivity(e);*/
+       /* Intent i = new Intent(menu_main.this, CloudVision.class);
+        finish();
+        startActivity(i);*/
 
 
         Datos d = new Datos(this);

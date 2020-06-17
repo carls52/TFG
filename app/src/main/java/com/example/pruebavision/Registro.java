@@ -58,7 +58,7 @@ public class Registro extends AppCompatActivity {
         contraseña = findViewById(R.id.contraseña);
         correo = findViewById(R.id.correo);
         guardar = findViewById(R.id.guardar);
-        flecha = findViewById(R.id.flecha);
+        flecha = findViewById(R.id.flecha2);
 
         flecha.setOnClickListener(new View.OnClickListener() {
             @Override

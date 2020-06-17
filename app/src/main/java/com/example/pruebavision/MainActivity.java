@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 
 import android.content.res.Configuration;
-import android.graphics.Canvas;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,7 +33,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -61,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        flecha = findViewById(R.id.flecha);
+        flecha = findViewById(R.id.flecha2);
         spinner = findViewById(R.id.tipo);
         mCameraView = findViewById(R.id.surfaceView);
         mCameraView.setWillNotDraw(false);
@@ -229,6 +227,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void receiveDetections(Detector.Detections<TextBlock> detections) {
                     final SparseArray<TextBlock> items = detections.getDetectedItems();
+
                     if (items.size() != 0) {
                         mTextView.post(new Runnable() {
                             @Override

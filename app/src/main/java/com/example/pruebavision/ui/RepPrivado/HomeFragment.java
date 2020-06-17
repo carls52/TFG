@@ -15,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.fragment.NavHostFragment;
 
+import com.example.pruebavision.CloudVision;
 import com.example.pruebavision.MainActivity;
 import com.example.pruebavision.R;
 import com.example.pruebavision.menu_main;
@@ -41,8 +42,10 @@ public class HomeFragment extends Fragment {
             public void onClick(View view) {
             //    Intent i = new Intent(getContext(), MainActivity.class);
             //    startActivity(i);
-                NavHostFragment.findNavController(HomeFragment.this)
-                        .navigate(R.id.action_nav_home_to_mainActivity);
+            //    NavHostFragment.findNavController(HomeFragment.this)
+            //            .navigate(R.id.action_nav_home_to_mainActivity);
+               Intent i = new Intent(getContext(), CloudVision.class);
+               startActivity(i);
             }
         });
         bundle = new Bundle();

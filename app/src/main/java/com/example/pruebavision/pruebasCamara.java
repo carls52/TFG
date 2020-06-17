@@ -6,23 +6,18 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.SparseArray;
 import android.view.Display;
-import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -30,7 +25,6 @@ import android.widget.Toast;
 
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
-import com.google.android.gms.vision.text.Line;
 import com.google.android.gms.vision.text.Text;
 import com.google.android.gms.vision.text.TextBlock;
 import com.google.android.gms.vision.text.TextRecognizer;
@@ -38,8 +32,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -65,7 +57,7 @@ public class pruebasCamara extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pruebas_camara);
 
-        flecha = findViewById(R.id.flecha);
+        flecha = findViewById(R.id.flecha2);
         spinner = findViewById(R.id.tipo);
         mCameraView = findViewById(R.id.surfaceView);
         mCameraView.setWillNotDraw(false);
