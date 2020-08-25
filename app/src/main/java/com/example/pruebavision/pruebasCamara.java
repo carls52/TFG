@@ -23,6 +23,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.pruebavision.online.Result;
+import com.example.pruebavision.online.menu_main;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.Text;
@@ -97,7 +99,7 @@ public class pruebasCamara extends AppCompatActivity {
     }
 
     public void onmBtnClicked() {
-        Intent i = new Intent(this,Result.class);
+        Intent i = new Intent(this, Result.class);
         //Intent i = new Intent(this, pruebasCamara.class);
         //hay que cambiar esto mas tarde
 

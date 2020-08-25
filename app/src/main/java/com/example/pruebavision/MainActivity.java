@@ -24,6 +24,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 
+import com.example.pruebavision.local.Local;
+import com.example.pruebavision.online.Result;
 import com.google.android.gms.vision.CameraSource;
 import com.google.android.gms.vision.Detector;
 import com.google.android.gms.vision.text.Text;
@@ -82,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
         flecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, menu_main.class);
+                Intent i = new Intent(MainActivity.this, Local.class);
                 startActivity(i);
                 finish();
             }
@@ -99,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onmBtnClicked() {
-        Intent i = new Intent(this,Result.class);
+        Intent i = new Intent(this, Result.class);
         //Intent i = new Intent(this, pruebasCamara.class);
         //hay que cambiar esto mas tarde
 

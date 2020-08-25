@@ -54,7 +54,16 @@ public class Usuario {
     }
     public void addCodigoPrivado(CodigoPrivado codigo)
     {
-        if(this.codigosPrivados.get(0).getAutor().equals("x") && this.codigosPrivados.get(0).getTitulo().equals("x"))
+        if(this.getCodigosPrivados()==null)
+        {
+            this.codigosPrivados = new ArrayList<>();
+            codigosPrivados.add(codigo);
+        }
+        else if(this.getCodigosPrivados().isEmpty())
+        {
+            codigosPrivados.add(codigo);
+        }
+        else if(this.codigosPrivados.get(0).getAutor().equals("x") && this.codigosPrivados.get(0).getTitulo().equals("x"))
         {
             codigosPrivados.clear();
             codigosPrivados.add(codigo);
@@ -65,7 +74,18 @@ public class Usuario {
     //true si hace algun cambio false si no cambia nada
     public boolean addFavorito(String Id)
     {
-        if(!this.favoritos.contains(Id)) {
+        if(this.favoritos==null)
+        {
+            this.favoritos = new ArrayList<>();
+            this.favoritos.add(Id);
+            return true;
+        }
+        else if(this.favoritos.isEmpty())
+        {
+            this.favoritos.add(Id);
+            return true;
+        }
+        else if(!this.favoritos.contains(Id)) {
             if (this.favoritos.get(0).equals("x")) {
                 this.favoritos.clear();
                 this.favoritos.add(Id);

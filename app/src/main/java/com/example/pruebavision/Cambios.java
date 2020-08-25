@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.pruebavision.online.Login;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
@@ -120,7 +121,7 @@ public class Cambios extends Fragment {
                                     } catch (Exception e) {
                                         e.printStackTrace();
                                     }
-                                    Intent i = new Intent(getContext(),Login.class);
+                                    Intent i = new Intent(getContext(), Login.class);
                                     startActivity(i);
                                     getActivity().finish();
                                 }

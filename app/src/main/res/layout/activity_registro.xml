@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipToPadding="false"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context=".Registro">
+    tools:context=".online.Registro">
 
 
     <EditText
@@ -87,7 +89,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:text="Registrarse"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFF"
         android:textSize="24sp"
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,6 +104,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/round_arrow"
+        android:elevation="80dp"
+        android:padding="1dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/baseline_arrow_back_white_48" />

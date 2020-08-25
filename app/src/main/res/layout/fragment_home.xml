@@ -4,52 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
-    tools:context=".ui.RepPrivado.HomeFragment">
+    android:background="@color/background"
+    tools:context=".local.ui.home.HomeFragment">
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonJava"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="5dp"
-        android:background="@drawable/round_java"
-        android:src="@mipmap/ic_java_foreground"
+        android:background="@drawable/button_java"
+        android:elevation="8dp"
+        android:text="java"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/buttonCplus"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/buttonPython"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonPython"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="40dp"
-        android:background="@drawable/round_python"
-        android:src="@mipmap/ic_python_foreground"
+        android:background="@drawable/button_python"
+        android:elevation="8dp"
+        android:text="PYTHON"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonC"
         app:layout_constraintLeft_toRightOf="@id/buttonJava"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonC"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginLeft="5dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="40dp"
-        android:background="@drawable/round_c"
-        android:src="@mipmap/ic_c_foreground"
+        android:background="@drawable/button_c"
+        android:elevation="8dp"
+        android:text="C"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonOtros"
         app:layout_constraintLeft_toRightOf="@id/buttonCplus"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonPython" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonCplus"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -57,15 +71,20 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/round_cplus"
-        android:src="@mipmap/ic_cplus_foreground"
+        android:background="@drawable/button_cplus"
+        android:elevation="8dp"
+        android:text="C++"
+        android:textColor="#FFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonJavaScript"
         app:layout_constraintEnd_toStartOf="@+id/buttonC"
         app:layout_constraintHorizontal_bias="0.846"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonJava" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonJavaScript"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -73,14 +92,19 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/round_javascript"
-        android:src="@mipmap/ic_javascript_foreground"
+        android:background="@drawable/javascript"
+        android:elevation="8dp"
+        android:text="JAVASCRIPT"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/buttonOtros"
         app:layout_constraintTop_toBottomOf="@+id/buttonC" />
 
-    <ImageButton
+    <Button
         android:id="@+id/buttonOtros"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -88,20 +112,15 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="40dp"
-        android:background="@drawable/round_otros"
-        android:src="@mipmap/ic_otros2_foreground"
+        android:background="@drawable/button_otros"
+        android:elevation="8dp"
+        android:text="OTROS"
+        android:textColor="#FFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationZ="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toRightOf="@id/buttonJavaScript"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonC" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/foto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:src="@drawable/ic_photo_camera_24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

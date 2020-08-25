@@ -10,10 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/round_otros"
+        android:background="?android:attr/detailsElementBackground"
         android:padding="10dp">
 
         <TextView
@@ -24,6 +21,7 @@
             android:text="Titulo"
             android:textColor="@color/colorBlack"
             android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/textView6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,11 +107,19 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:text="Autor"
-            android:textColor="@color/colorBlack"
+            android:textColor="@color/subText"
             app:layout_constraintBottom_toTopOf="@id/tipoListaPublica"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/fechaPublica" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="10dp" />
 
 </LinearLayout>

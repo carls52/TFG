@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/background"
     android:padding="16dp"
-    tools:context=".Login">
+    tools:context=".online.Login">
 
 
     <EditText
@@ -54,7 +55,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/round_button"
         android:text="Entrar"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guardar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,7 +71,7 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/round_button"
         android:text="Registrarse"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,6 +87,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contraseña"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/backLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_white_48" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

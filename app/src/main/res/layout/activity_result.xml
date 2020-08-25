@@ -4,49 +4,88 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#00FFFFFF"
+    android:background="@color/background"
+    android:clipToPadding="false"
     android:padding="16dp"
-    tools:context=".Result">
+    tools:context=".online.Result">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:elevation="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
 
             <EditText
                 android:id="@+id/titulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
                 android:background="@drawable/round_text"
+                android:elevation="8dp"
                 android:hint="Título"
-                android:padding="8dp">
+                android:padding="10dp">
 
             </EditText>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:clipToPadding="false"
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <Spinner
-                    android:id="@+id/tipo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:minHeight="50dp" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <Spinner
-                    android:id="@+id/visible"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:minHeight="50dp"
-                    android:spinnerMode="dropdown" />
+                    <Spinner
+                        android:id="@+id/visible"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/round_text"
+                        android:elevation="8dp"
+                        android:minHeight="50dp"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        app:layout_constraintEnd_toStartOf="@+id/textView3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="6dp" />
+
+                    <Spinner
+                        android:id="@+id/tipo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/round_text"
+                        android:elevation="8dp"
+                        android:gravity="center_horizontal"
+                        android:minHeight="50dp"
+                        android:spinnerMode="dialog"
+                        android:textAlignment="center"
+                        android:textColor="#FFF"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView3"
+                        tools:layout_editor_absoluteY="6dp" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="16dp" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
 
@@ -68,8 +107,12 @@
                 android:id="@+id/captured_text"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
                 android:layout_marginBottom="15dp"
                 android:background="@drawable/round_text"
+                android:elevation="8dp"
                 android:ems="10"
                 android:inputType="textMultiLine"
                 android:minHeight="400dp"
@@ -80,9 +123,13 @@
                 android:id="@+id/guardar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:background="@drawable/round_button"
+                android:elevation="16dp"
+                android:padding="8dp"
+                android:stateListAnimator="@null"
                 android:text="Guardar"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#FFF"
                 android:textSize="24sp" />
 
         </LinearLayout>
@@ -92,7 +139,9 @@
         android:id="@+id/flecha2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:background="@drawable/round_arrow"
+        android:elevation="8dp"
         app:srcCompat="@drawable/baseline_arrow_back_white_48" />
 
 

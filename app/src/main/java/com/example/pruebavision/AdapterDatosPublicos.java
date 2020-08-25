@@ -44,14 +44,15 @@ public class AdapterDatosPublicos extends RecyclerView.Adapter<AdapterDatosPubli
     @Override
     public void onBindViewHolder(@NonNull ViewHolderDatos holder, int position) {
         holder.asignarDatos(lista.get(position));
-        if(usuario.getFavoritos().contains(lista.get(position).getID()))
-        {
-            holder.cambiarEstrella();
+        if(usuario.getFavoritos()!=null) {
+            if (usuario.getFavoritos().contains(lista.get(position).getID())) {
+                holder.cambiarEstrella();
+            }
         }
-        if(!lista.get(position).getAutor().equals(usuario.getNombre()))
-        {
+        if (!lista.get(position).getAutor().equals(usuario.getNombre())) {
             holder.esconderBorrar();
         }
+
     }
 
     @Override

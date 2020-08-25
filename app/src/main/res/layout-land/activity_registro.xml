@@ -8,7 +8,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context=".Registro">
+    tools:context=".online.Registro">
 
     <ImageView
         android:id="@+id/flecha2"
@@ -105,7 +105,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/round_button"
         android:text="Registrarse"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#FFF"
         android:textSize="24sp"
 
         app:layout_constraintBottom_toBottomOf="parent"

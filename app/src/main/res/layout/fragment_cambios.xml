@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     android:paddingLeft="40dp"
     android:paddingRight="40dp"
     tools:context=".Cambios">
@@ -65,7 +66,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/round_button"
         android:text="guardar"
-        android:textColor="@color/colorPrimary"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

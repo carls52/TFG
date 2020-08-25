@@ -8,22 +8,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CloudVision"
-            android:screenOrientation="portrait">
-            </activity>
-        <activity android:name=".pruebasCamara" />
+        <activity android:name=".local.ResultLocal" />
         <activity
-            android:name=".Registro"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Login"
+            android:name=".local.Local"
             android:label="TFG"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Selection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,10 +26,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Result"
+            android:name=".online.CloudVision"
+            android:screenOrientation="portrait" />
+        <activity android:name=".pruebasCamara" />
+        <activity
+            android:name=".online.Registro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".menu_main"
+            android:name=".online.Login"
+            android:label="TFG"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".online.Result"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".online.menu_main"
             android:label="PRINCIPAL"
             android:theme="@style/AppTheme.NoActionBar">
 
@@ -49,17 +55,19 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <provider
 
+        <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">
-            <!-- android:name="android.support.v4.content.FileProvider"-->
+
+            <!-- android:name="android.support.v4.content.FileProvider" -->
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
+
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="ocr" />
