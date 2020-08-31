@@ -2,6 +2,7 @@ package com.example.pruebavision;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,7 +15,7 @@ import com.example.pruebavision.online.Login;
 
 public class Selection extends AppCompatActivity {
 
-    private Button modoLocal,modoOnline;
+    private Button modoLocal,modoOnline,btn_pruebas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +43,21 @@ public class Selection extends AppCompatActivity {
                 finish();
             }
         });
+        btn_pruebas = findViewById(R.id.btn_pruebas);
+        btn_pruebas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Selection.this,grupo.class);
+                startActivity(i);
+            }
+        });
+    /*    btn_pruebas = findViewById(R.id.btn_pruebas);
+        btn_pruebas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Selection.this,grupo.class);
+                startActivity(i);
+        });*/
+
     }
 }

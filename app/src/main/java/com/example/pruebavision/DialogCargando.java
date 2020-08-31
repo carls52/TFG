@@ -3,6 +3,7 @@ package com.example.pruebavision;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.view.LayoutInflater;
+import android.widget.Button;
 
 
 public class DialogCargando {
@@ -22,7 +23,10 @@ public class DialogCargando {
         builder.setView(inflater.inflate(R.layout.dialog_cargando,null));
         builder.setCancelable(true);
 
+
+
         dialog = builder.create();
+
         dialog.show();
     }
 

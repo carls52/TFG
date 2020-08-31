@@ -18,6 +18,25 @@
     <string name="next">next</string>
 
 
+    <string name="title_activity_cosas">cosas</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_local">Local</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="home_second">Home Second</string>
     <string-array name="tipos">
         <item>JAVA</item>
         <item>C</item>
@@ -32,24 +51,5 @@
         <item>PÚBLICO</item>
         <item>GRUPO</item>
     </string-array>
-    <string name="title_activity_cosas">cosas</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="previous">Previous</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_local">Local</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-
-    <string name="home_second">Home Second</string>
 
 </resources>
